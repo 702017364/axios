@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@vope/types':
+    specifier: ^1.0.2
+    version: 1.0.2
   '@vope/utils':
     specifier: ^1.4.0
     version: 1.4.0
@@ -13,9 +16,6 @@ dependencies:
     version: 1.5.1
 
 devDependencies:
-  '@vope/types':
-    specifier: ^1.0.2
-    version: 1.0.2
   esbuild:
     specifier: ^0.19.4
     version: 0.19.4
@@ -226,7 +226,7 @@ packages:
   /@vope/types@1.0.2:
     resolution: {integrity: sha512-nu/NbJSIdp+W+SuB2KLg6xzvem97PsLb1aFfydnX/nwhK/TnleNOhP1UCCn9VJPi+VW+6JH5/kVDrGtC6ZsqRQ==}
     engines: {npm: '>=7.0.0'}
-    dev: true
+    dev: false
 
   /@vope/utils@1.4.0:
     resolution: {integrity: sha512-qlNri6v+eXTbqTp8FOMUnnvrCU8qG6vOr1qMeog8QxDl1xOMgfTAQ7wX+AxWwH1NQWkWDnOJxGDOR3yhMI/rug==}

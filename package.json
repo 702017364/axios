@@ -17,11 +17,11 @@
   "module": "./index.esm.js",
   "main": "./index.cjs.js",
   "dependencies": {
+    "@vope/types": "^1.0.2",
     "@vope/utils": "^1.4.0",
     "axios": "^1.5.1"
   },
   "devDependencies": {
-    "@vope/types": "^1.0.2",
     "esbuild": "^0.19.4",
     "typescript": "^5.2.2"
   },
