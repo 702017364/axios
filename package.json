@@ -1,0 +1,33 @@
+{
+  "name": "@vope/axios",
+  "version": "1.0.0",
+  "description": "axios",
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json & esbuild ./index.ts --format=esm --outfile=index.esm.js & esbuild ./index.ts --format=cjs --outfile=index.cjs.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "vope",
+  "license": "ISC",
+  "types": "./index.d.ts",
+  "module": "./index.esm.js",
+  "main": "./index.cjs.js",
+  "dependencies": {
+    "@vope/utils": "^1.4.0",
+    "axios": "^1.5.1"
+  },
+  "devDependencies": {
+    "@vope/types": "^1.0.2",
+    "esbuild": "^0.19.4",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "index.cjs.js",
+    "index.esm.js",
+    "index.d.ts"
+  ]
+}
