@@ -19,7 +19,7 @@ const cut = <T, K extends Exclude<keyof Config<T>, keyof AxiosRequestConfig>>(co
   }
 }
 
-type Options = NonNullable<Parameters<typeof connectURLParams>[1]>
+type Options = {}
 
 export const apiPost = (axios: AxiosInstance, handle: (e: Error) => void) => {
   /**
