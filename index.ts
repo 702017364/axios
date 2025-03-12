@@ -64,7 +64,7 @@ export const apiGet = (axios: AxiosInstance, handle: (e: Error) => void) => {
       rejectValue0 !== void 0 && (rejectValue = rejectValue0)
     }
     return new Promise<T | V>((resolve) => {
-      axios.get(connectURLParams(url, options), config).then(
+      axios.get(options ? connectURLParams(url, options): url, config).then(
         // @ts-ignore
         resolve,
         (e: Error) => {
