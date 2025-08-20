@@ -1,6 +1,6 @@
 {
   "name": "@vope/axios",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "axios",
   "publishConfig": {
     "access": "public",
@@ -18,7 +18,7 @@
   "main": "./index.js",
   "dependencies": {
     "@vope/types": "^1.1.3",
-    "@vope/utils": "^1.6.5"
+    "@vope/utils": "^1.6.6"
   },
   "devDependencies": {
     "esbuild": "^0.25.9",
