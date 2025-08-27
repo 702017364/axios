@@ -1,6 +1,6 @@
-import { ReviseRequired } from '@vope/types'
+import type { ReviseRequired } from '@vope/types'
 import { connectURLParams } from '@vope/utils'
-import { AxiosInstance, AxiosRequestConfig } from 'axios'
+import type { AxiosInstance, AxiosRequestConfig } from 'axios'
 
 type RejectValue = symbol | string | false
 

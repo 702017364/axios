@@ -12,8 +12,8 @@ importers:
         specifier: ^1.1.3
         version: 1.1.3
       '@vope/utils':
-        specifier: ^1.6.6
-        version: 1.6.6
+        specifier: ^1.6.7
+        version: 1.6.7
       axios:
         specifier: ^1.11.0
         version: 1.11.0
@@ -196,8 +196,8 @@ packages:
     resolution: {integrity: sha512-B+hSm3VUq8UOeDhdX3HWxbOAmeS6WPfsMQORTgCfswkLrEfzLL07CCl3Vov5OZ5FVQVVWNWgKRCHf1FUpRIjpg==}
     engines: {npm: '>=7.0.0'}
 
-  '@vope/utils@1.6.6':
-    resolution: {integrity: sha512-rE2MU0XrrM46J9H57pYRh34gb5JNUGrO9rQmpTSFIzdQ8u7TokzKg33bF3VlYexCVieO7tFyKd6mksBfQl19HQ==}
+  '@vope/utils@1.6.7':
+    resolution: {integrity: sha512-2jVw0AZt5U0Zy6hIet4cqT2CLeVdcA25r9OhlEByuk84sHwLzodyCfgtDCvt2Dl2OJPGYU/QOb/LakKQPK7jng==}
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
@@ -415,7 +415,7 @@ snapshots:
     dependencies:
       '@type-challenges/utils': 0.1.1
 
-  '@vope/utils@1.6.6':
+  '@vope/utils@1.6.7':
     dependencies:
       '@type-challenges/utils': 0.1.1
       '@types/lodash-es': 4.17.12
