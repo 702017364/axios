@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- 添加了完整的测试套件，包括对 [apiPost](index.ts#L33-L50) 和 [apiGet](index.ts#L52-L71) 函数的全面测试
+- 添加了完整的测试套件，包括对 [apiPost](index.ts) 和 [apiGet](index.ts) 函数的全面测试
 - 配置了 Jest 测试环境，支持 TypeScript 测试
 - 添加了测试相关的依赖项：jest, ts-jest, @types/jest, lodash, @types/lodash
 - 添加了 [jest.config.js](jest.config.js) 配置文件用于测试配置
