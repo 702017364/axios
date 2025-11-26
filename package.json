@@ -1,6 +1,6 @@
 {
   "name": "@vope/axios",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "axios",
   "publishConfig": {
     "access": "public",
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.json & esbuild ./index.ts --format=esm --outfile=index.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test",
+    "test": "jest"
   },
   "author": "vope",
   "license": "ISC",
@@ -18,10 +19,15 @@
   "main": "./index.js",
   "dependencies": {
     "@vope/types": "^1.2.0",
-    "@vope/utils": "^1.6.8"
+    "@vope/utils": "^1.7.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.21",
     "esbuild": "^0.25.9",
+    "jest": "^29.7.0",
+    "lodash": "^4.17.21",
+    "ts-jest": "^29.4.5",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {

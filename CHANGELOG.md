@@ -1,0 +1,20 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.1.5] - 2025-11-26
+
+### Added
+
+- 添加了完整的测试套件，包括对 [apiPost](file:///index.ts#L33-L50) 和 [apiGet](file:///index.ts#L52-L71) 函数的全面测试
+- 配置了 Jest 测试环境，支持 TypeScript 测试
+- 添加了测试相关的依赖项：jest, ts-jest, @types/jest, lodash, @types/lodash
+- 添加了 [jest.config.js](file:///jest.config.js) 配置文件用于测试配置
+- 添加了 [tsconfig.test.json](file:///tsconfig.test.json) 用于测试环境的 TypeScript 配置
+
+### Changed
+
+- 更新了 [package.json](file:///package.json) 添加了 `test` 脚本命令
