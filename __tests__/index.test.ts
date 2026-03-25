@@ -113,7 +113,7 @@ describe('apiGet', () => {
     name: string
   }
 
-  // 创建一个模拟的axios实例
+  // 创建一个模拟的 axios 实例
   let mockAxios: AxiosInstance
   let errorHandler: jest.Mock
 
@@ -131,7 +131,7 @@ describe('apiGet', () => {
     errorHandler = jest.fn()
   })
 
-  it('应该成功发送GET请求并返回响应数据', async () => {
+  it('应该成功发送 GET 请求并返回响应数据', async () => {
     // 准备数据
     const mockResponseData: User = { id: 1, name: 'John Doe' };
 
@@ -150,7 +150,7 @@ describe('apiGet', () => {
     expect(errorHandler).not.toHaveBeenCalled()
   })
 
-  it('应该使用options参数构造URL查询参数', async () => {
+  it('应该使用 options 参数构造 URL 查询参数', async () => {
     // 准备数据
     const mockResponseData: User = { id: 1, name: 'John Doe' };
 
@@ -169,7 +169,26 @@ describe('apiGet', () => {
     expect(errorHandler).not.toHaveBeenCalled()
   })
 
-  it('应该在请求失败时返回false作为默认拒绝值', async () => {
+  it('应该在 options 为非空字符串时拼接 URL 路径', async () => {
+    // 准备数据
+    const mockResponseData: User = { id: 1, name: 'John Doe' };
+
+    // 设置模拟行为
+    (mockAxios.get as jest.Mock).mockImplementation(() =>
+      Promise.resolve(mockResponseData)
+    )
+
+    // 执行测试
+    const get = apiGet(mockAxios, errorHandler)
+    const result = await get<User, false>('/users', '1')
+
+    // 验证结果
+    expect(result).toEqual(mockResponseData)
+    expect(mockAxios.get).toHaveBeenCalledWith('/users/1', undefined)
+    expect(errorHandler).not.toHaveBeenCalled()
+  })
+
+  it('应该在请求失败时返回 false 作为默认拒绝值', async () => {
     // 准备数据
     const error = new Error('Network Error');
 
@@ -207,7 +226,7 @@ describe('apiGet', () => {
     expect(errorHandler).toHaveBeenCalledWith(error)
   })
 
-  it('应该使用twist选项处理错误而不是默认处理器', async () => {
+  it('应该使用 twist 选项处理错误而不是默认处理器', async () => {
     // 准备数据
     const error = new Error('Network Error')
     const twistHandler = jest.fn();

@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@vope/types':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       '@vope/utils':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.7.3
+        version: 1.7.3
       axios:
         specifier: ^1.11.0
         version: 1.11.0
@@ -510,12 +510,12 @@ packages:
   '@types/yargs@17.0.35':
     resolution: {integrity: sha512-qUHkeCyQFxMXg79wQfTtfndEC+N9ZZg76HJftDJp+qH2tV7Gj4OJi7l+PiWwJ+pWtW8GwSmqsDj/oymhrTWXjg==}
 
-  '@vope/types@1.2.0':
-    resolution: {integrity: sha512-B7qd8MZIQUXpROi+Yw45uAoZG0Bj7EY2G2Ctb1RooVO1vq0d2tjp9pkeneQfp4HtR+WSX8YuG/7ppV87qSVqsQ==}
+  '@vope/types@1.2.1':
+    resolution: {integrity: sha512-TlGA3xyBN3b/hIATFOYpvtPW6vPkIPzR5TI176TzB6bYtjYKIaykEKS+uQFJklMvSMhPljWFguKOPWQ5jwPUyQ==}
     engines: {npm: '>=7.0.0'}
 
-  '@vope/utils@1.7.0':
-    resolution: {integrity: sha512-5FHTAyaN70y9tudbcadGWrmc0Dti872zBoH3IlqvU96ABVkM0iu8Wnx02pLJkKT64Acz5qqnRG4JHOHXqwXTTw==}
+  '@vope/utils@1.7.3':
+    resolution: {integrity: sha512-SsZwp9hAUpnF48XieatMIjW2jEcm/L2oduFaxICC176sUq5MxCdIp/6OpaX0bhwbUQP80vOScZC17KkGyjGcOQ==}
 
   ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
@@ -1113,8 +1113,8 @@ packages:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
 
-  lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+  lodash-es@4.17.23:
+    resolution: {integrity: sha512-kVI48u3PZr38HdYz98UmfPnXl2DXrpdctLrFLCd3kOx1xUkOmpFPx7gCWWM5MPkL/fD8zb+Ph0QzjGFs4+hHWg==}
 
   lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
@@ -1309,8 +1309,8 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
-  sm-crypto@0.3.13:
-    resolution: {integrity: sha512-ztNF+pZq6viCPMA1A6KKu3bgpkmYti5avykRHbcFIdSipFdkVmfUw2CnpM2kBJyppIalqvczLNM3wR8OQ0pT5w==}
+  sm-crypto@0.3.14:
+    resolution: {integrity: sha512-sR7NuGAJH93Om8keAF2/rj1EqFzEiUey4aKGyDo3nQ2BiVqhgq8UkiIoIp5qhV9w4pG7qArhfqyewcG8AbhXbg==}
 
   source-map-support@0.5.13:
     resolution: {integrity: sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==}
@@ -2006,19 +2006,19 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@vope/types@1.2.0':
+  '@vope/types@1.2.1':
     dependencies:
       '@type-challenges/utils': 0.1.1
 
-  '@vope/utils@1.7.0':
+  '@vope/utils@1.7.3':
     dependencies:
       '@type-challenges/utils': 0.1.1
       '@types/lodash-es': 4.17.12
-      '@vope/types': 1.2.0
+      '@vope/types': 1.2.1
       csstype: 3.2.3
       localforage: 1.10.0
-      lodash-es: 4.17.21
-      sm-crypto: 0.3.13
+      lodash-es: 4.17.23
+      sm-crypto: 0.3.14
 
   ansi-escapes@4.3.2:
     dependencies:
@@ -2820,7 +2820,7 @@ snapshots:
     dependencies:
       p-locate: 4.1.0
 
-  lodash-es@4.17.21: {}
+  lodash-es@4.17.23: {}
 
   lodash.memoize@4.1.2: {}
 
@@ -2975,7 +2975,7 @@ snapshots:
 
   slash@3.0.0: {}
 
-  sm-crypto@0.3.13:
+  sm-crypto@0.3.14:
     dependencies:
       jsbn: 1.1.0
 

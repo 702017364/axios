@@ -1,5 +1,5 @@
 import type { ReviseRequired } from '@vope/types'
-import { connectURLParams } from '@vope/utils'
+import { connectURLParams, joinPaths } from '@vope/utils'
 import type { AxiosInstance, AxiosRequestConfig } from 'axios'
 
 type RejectValue = symbol | string | false
@@ -64,7 +64,14 @@ export const apiGet = (axios: AxiosInstance, handle: (e: Error) => void) => {
       rejectValue0 !== void 0 && (rejectValue = rejectValue0)
     }
     return new Promise<T | V>((resolve) => {
-      axios.get(options ? connectURLParams(url, options): url, config).then(
+      axios.get(
+        options
+          ? typeof options === 'string'
+            ? joinPaths(url, options)
+            : connectURLParams(url, options)
+          : url,
+        config
+      ).then(
         // @ts-ignore
         resolve,
         (e: Error) => {
