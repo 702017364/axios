@@ -1,6 +1,6 @@
 {
   "name": "@vope/axios",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "axios",
   "publishConfig": {
     "access": "public",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc -p ./tsconfig.json & esbuild ./index.ts --format=esm --outfile=index.js",
-    "prepublishOnly": "npm run test",
+    "prepublishOnly": "npm run build & npm run test",
     "test": "jest"
   },
   "author": "vope",
