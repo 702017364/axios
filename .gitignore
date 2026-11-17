@@ -1,4 +1,6 @@
 node_modules
+
 .vscode
+
 index.js
 index.d.ts

@@ -22,6 +22,11 @@ npm install @vope/axios axios
 | rejectValue | `symbol \| string \| false` | 变更默认错误返回值 |
 | twist | `(e: Error) => void` | 错误拦截 |
 
+
+## logs
+[CHANGELOG](./CHANGELOG.md)
+
+
 ## License
 
 ISC
