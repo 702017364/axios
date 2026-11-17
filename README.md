@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-npm install @vope/axios axios
+npm install @vope/axios
 ```
 
 ## 导出 API
